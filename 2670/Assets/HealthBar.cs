@@ -2,24 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IfStatements : MonoBehaviour
+public class HealthBar : MonoBehaviour
 {
 
-	public float Speed;
-	public bool LightsOn;
+	public FloatData Health;
 	
 	// Use this for initialization
-	void Start ()
-	{
-		if (!LightsOn || Speed > 4);
-		{
-			//do work
-		}
+	void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (Health.Value > 0)
+		{
+			//Live
+		}
+		else
+		{
+			//Die
+		}
 	}
 }

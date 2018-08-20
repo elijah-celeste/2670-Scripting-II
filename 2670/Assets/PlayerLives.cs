@@ -2,19 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IfStatements : MonoBehaviour
-{
+public class PlayerLives : MonoBehaviour {
 
-	public float Speed;
-	public bool LightsOn;
-	
 	// Use this for initialization
-	void Start ()
-	{
-		if (!LightsOn || Speed > 4);
-		{
-			//do work
-		}
+	void Start () {
 		
 	}
 	
