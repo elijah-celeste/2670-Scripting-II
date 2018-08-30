@@ -9,9 +9,14 @@
         <e p="EndGame.cs" t="Include" />
         <e p="FloatData.cs" t="Include" />
         <e p="HealthBar.cs" t="Include" />
-        <e p="IfStatements.cs" t="Include" />
         <e p="KillPlayer.cs" t="Include" />
+        <e p="NewEvent.cs" t="Include" />
         <e p="PlayerLives.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="EventBasedBehaviors" t="Include">
+            <e p="DestroyEvent.cs" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
