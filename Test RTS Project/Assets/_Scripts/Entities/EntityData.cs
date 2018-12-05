@@ -13,7 +13,6 @@ public class EntityData : MonoBehaviour
 	public bool isTasked;
 	public GameObject assignedTask;
 	public Animator anim;
-	public bool hasContextMenu;
 
 	[Header("Current Values")] 
 	public int currentHealth;
@@ -25,10 +24,6 @@ public class EntityData : MonoBehaviour
 	[HideInInspector] public int baseDamage;
 	[HideInInspector] public string description;
 	[HideInInspector] public int value;
-	[HideInInspector] public bool hasContextA;
-	[HideInInspector] public string textA;
-	[HideInInspector] public bool hasContextB;
-	[HideInInspector] public string textB;
 	
 	void Awake () 
 	{
@@ -40,15 +35,6 @@ public class EntityData : MonoBehaviour
 		description = entityObject.Description;
 		value = entityObject.Value;
 		currentHealth = baseHealth;
-
-		if (entityObject.hasContextA || entityObject.hasContextB)
-		{
-			hasContextMenu = true;
-			hasContextA = entityObject.hasContextA;
-			hasContextB = entityObject.hasContextB;
-			textA = entityObject.textA;
-			textB = entityObject.textB;
-		}
 		
 		if (objName == "Knight")
 		{

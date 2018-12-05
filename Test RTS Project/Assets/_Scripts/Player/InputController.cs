@@ -102,13 +102,13 @@ public class InputController : MonoBehaviour
 						if (_activeEntity.hasContextA == true)
 						{
 							contextA.gameObject.SetActive(true);
-							contextA.GetComponentInChildren<Text>().text = _activeEntity.textA;
+							contextA.GetComponentInChildren<Text>().text = _activeEntity.entityObject.ContextA.ButtonText;
 						}
 
 						if (_activeEntity.hasContextB == true)
 						{
 							contextB.gameObject.SetActive(true);
-							contextB.GetComponentInChildren<Text>().text = _activeEntity.textB;
+							contextB.GetComponentInChildren<Text>().text = _activeEntity.entityObject.ContextB.ButtonText;
 						}
 					}
 					else if (!_activeEntity.hasContextMenu)
@@ -154,7 +154,7 @@ public class InputController : MonoBehaviour
 				if (hit.collider.GetComponent<EntityData>() != null && 
 				    hit.collider.GetComponent<EntityData>().isSelectable)
 				{
-					Debug.Log("Unit Selected");
+					Debug.Log("Target Selected");
 					_activeEntity.assignedTask = hit.collider.gameObject;
 					_activeEntity.isTasked = true;
 				}
@@ -163,12 +163,13 @@ public class InputController : MonoBehaviour
 	}
 	
 	//Button Functions
-	public void ButtonA()
-	{
-		Debug.Log("Button A Pressed");
-	}
-	public void ButtonB()
-	{
-		Debug.Log("Button B Pressed");
-	}
+//	public void ButtonA()
+//	{
+//		Debug.Log("Button A Pressed");
+////		_activeEntity.entityObject.ContextA.doAbility(selectedObj);
+//	}
+//	public void ButtonB()
+//	{
+//		Debug.Log("Button B Pressed");
+//	}
 }

@@ -15,8 +15,12 @@ public class Entity : ScriptableObject
 	[TextArea] public string Description;
 	public int Value;
 	public Color Color = Color.grey;
-	public bool hasContextA;
-	public string textA;
-	public bool hasContextB;
-	public string textB;
+	public Ability[] Ability = new Ability[1];
+	
+//	public bool hasContextA;
+//	public string textA;
+//	public bool hasContextB;
+//	public string textB;
+//	public Context ContextA;
+//	public Context ContextB;
 }
